@@ -44,7 +44,7 @@ done
 #Put the arrays together and what do we get? Possible Combinations!
 for a in ${first_num_poss[@]} ; do
 	for b in ${second_num_poss[@]} ; do
-		echo {first_num_poss[$a]}-{second_num_poss[$b]}-$LASTNUM
+		echo $a-$b-$LASTNUM
 	done
 done
 
