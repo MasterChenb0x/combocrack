@@ -10,6 +10,6 @@ possibilities down to 80, reducing the time needed to crack the lock to ~30 minu
 # Things to do (2015-05-04)
 ===========================
 1. ~~Fix output of combinations~~
-2. Provide information on finding the last number
+2. ~~Provide information on finding the last number~~
 3. Elimiate two possibilities in the second number of the combination
 4. Add error handling
