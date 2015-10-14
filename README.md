@@ -11,5 +11,5 @@ possibilities down to 80, reducing the time needed to crack the lock to ~30 minu
 ===========================
 1. ~~Fix output of combinations~~
 2. ~~Provide information on finding the last number~~
-3. Elimiate two possibilities in the second number of the combination
+3. Elimiate two possibilities in the second number of the combination (numbers are selected. Will remove from array later)
 4. Add error handling

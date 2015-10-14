@@ -57,7 +57,15 @@ while [ $i -lt 40 ]; do
         let counter+=1
         let i+=4
 done
-sleep 3
+
+FOO=`expr $LASTNUM + 2`
+BAR=`expr $LASTNUM - 2`
+
+echo "#######"
+echo $FOO
+echo $BAR
+
+sleep 5
 #Put the arrays together and what do we get? Possible Combinations!
 for a in ${first_num_poss[@]} ; do
 	for b in ${second_num_poss[@]} ; do
