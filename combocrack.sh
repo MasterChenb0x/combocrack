@@ -51,19 +51,24 @@ then
 	let i+=4
 fi
 
+FOO=$(( $LASTNUM - 2 ))
+BAR=$(( $LASTNUM + 2 ))
 while [ $i -lt 40 ]; do
         second_num_poss[$counter]=$i
         echo ${second_num_poss[$counter]}
-        let counter+=1
+	let counter+=1
         let i+=4
 done
-
-FOO=`expr $LASTNUM + 2`
-BAR=`expr $LASTNUM - 2`
 
 echo "#######"
 echo $FOO
 echo $BAR
+
+DEL=($FOO $BAR)
+for del in ${DEL[@]}
+do
+	second_num_poss=(${second_num_poss[@]/$del})
+done
 
 sleep 5
 #Put the arrays together and what do we get? Possible Combinations!
