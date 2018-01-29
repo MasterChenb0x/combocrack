@@ -3,9 +3,15 @@
 clear 
 
 usage () {
-	echo "./combocrack.sh <last_num>"
-
+	echo "usage: $0 <last_num>"
+	exit 1
 }
+
+if [ $# -lt 1 ]
+then
+	usage
+	exit 0
+fi
 
 echo "The Last Number of the Combination is: $1"
 sleep 2
